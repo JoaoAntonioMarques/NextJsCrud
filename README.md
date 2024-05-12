@@ -1,58 +1,9 @@
-# Next.js 13 CRUD
+# Next.js CRUD
+Este repositório contém uma aplicação simples Next.js 13 que demonstra operações CRUD (Create, Read, Update, Delete). A aplicação permite aos usuários realizar ações básicas de CRUD em um conjunto de dados, fornecendo um exemplo prático de como implementar essas operações usando Next.js 13.
 
-This repository contains a simple Next.js 13 application that demonstrates CRUD (Create, Read, Update, Delete) operations. The application allows users to perform basic CRUD actions on a dataset, providing a practical example of how to implement these operations using Next.js 13.
+## Recursos
+Criar: Adicionar novos jogadores ao conjunto de dados por meio de uma interface amigável ao usuário
+Visualizar: Visualizar o conjunto de dados existente e navegar pelos itens.
+Atualizar: Editar as informações de qualquer jogador no conjunto de dados sem esforço.
+Excluir: Remover jogador do conjunto de dados com um prompt de confirmação
 
-## Features
-
-- Create: Add new jogadors to the dataset through a user-friendly interface
-- View: View the existing dataset and browse through the items.
-- Update: Edit the information of any jogador in the dataset effortlessly.
-- Delete: Remove jogador from the dataset with a confirmation prompt
-
-## Demo
-
-A live demo of the application is available at https://shakir-nextj13-crud.netlify.app/.
-
-## Installation
-
-- Clone the repository to your local machine.
-  Install my-project with npm
-
-```bash
-git clone https://github.com/your-username/nextjs-13-crud-operations.git
-cd nextjs-13-crud-operations
-```
-
-- Install the dependencies using npm or yarn.
-
-```bash
-npm install
-# or
-yarn install
-```
-
-- Start the development server.
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-- Open your browser and navigate to http://localhost:3000 to access the application.
-
-## Technologies Used
-
-- Next.js 13
-- MongoDB
-- Mongoose
-- React Hook Form
-- Bootstrap
-
-## Acknowledgments
-
-Thanks to the Next.js team for providing a powerful framework for building modern web applications.
-
-Happy coding! 🚀:
-"# NextJsCrud" 
-"# NextJsCrud" 

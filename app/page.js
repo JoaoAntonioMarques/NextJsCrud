@@ -43,7 +43,7 @@ const Home = () => {
     <div className="container-fluid mt-4">
     <div className="row justify-content-center">
       <div className="col-sm-12 text-center mb-4">
-        <h2>WELCOME</h2>
+        <h2>Bem vindo</h2>
       </div>
       <div className="col-sm-4">
         <div className="moto-widget-text-content">

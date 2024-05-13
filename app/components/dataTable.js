@@ -3,13 +3,13 @@ import React from "react";
 
 const DataTable = ({ cols = [], rows = [] }) => {
   const handlerDelete = async (id) => {
-    if (confirm("Are you sure you want to delete")) {
+    if (confirm("Realmente deseja excluir o jogador?")) {
       try {
         const res = await fetch(`../api/${id}`, {
           method: "DELETE",
         });
         if (!res.ok) {
-          throw new Error("Couldn't delete");
+          throw new Error("Erro ao excluir");
         }
 
         const { message } = await res.json();

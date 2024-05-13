@@ -13,7 +13,7 @@ export async function POST(request) {
   await connectMongoDB();
   await Jogadors.create({ nome, nacionalidade, rankingatual });
   return NextResponse.json(
-    { message: "Jogador created successfully" },
+    { message: "Jogador criado com sucesso" },
     { status: 200 }
   );
 }

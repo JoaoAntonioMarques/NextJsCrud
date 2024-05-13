@@ -21,12 +21,12 @@ const ViewJogador = ({ id }) => {
     try {
       const res = await fetch(`../api/${id}`);
       if (!res.ok) {
-        throw new Error("Failed to get jogador");
+        throw new Error("Falha ao obter jogador");
       }
 
       return await res.json();
     } catch (error) {
-      alert("Failed to get jogador");
+      alert("Falha ao obter jogador");
     }
   };
 

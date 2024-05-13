@@ -30,15 +30,15 @@ const EditJogador = ({ id }) => {
       });
 
       if (!res.ok) {
-        throw new Error("Failed to update jogador");
+        throw new Error("Falha ao atualizar o jogador");
       }
 
       const { message } = await res.json();
       alert(message);
       router.push("../");
     } catch (error) {
-      console.log("Failed to update jogador", error);
-      alert("Failed to update jogador");
+      console.log("Falha ao atualizar o jogador", error);
+      alert("Falha ao atualizar o jogador");
     }
   };
 
@@ -46,12 +46,12 @@ const EditJogador = ({ id }) => {
     try {
       const res = await fetch(`../api/${id}`);
       if (!res.ok) {
-        throw new Error("Failed to get jogador");
+        throw new Error("Falha ao obter jogador");
       }
 
       return await res.json();
     } catch (error) {
-      alert("Failed to get jogador");
+      alert("Falha ao obter jogador");
     }
   };
 
@@ -79,10 +79,10 @@ const EditJogador = ({ id }) => {
                 <label htmlFor="nacionalidade" className="form-label">
                   Nacionalidade
                 </label>
-                <textarea
+                <input
                   className="form-control"
                   {...register("nacionalidade", { required: true })}
-                ></textarea>
+                />
               </div>
               <div className="mb-3">
                 <label htmlFor="rankingatual" className="form-label">

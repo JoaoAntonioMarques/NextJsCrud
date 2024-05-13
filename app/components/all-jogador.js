@@ -11,13 +11,13 @@ const AllJogadors = () => {
       try {
         const res = await fetch("/api/");
         if (!res.ok) {
-          throw new Error("Error fetching jogadors");
+          throw new Error("Error ao buscar os jogadores");
         }
 
         const { jogadors } = await res.json();
         setRows(jogadors);
       } catch (error) {
-        console.log("Error fetching jogadors");
+        console.log("Error ao buscar os jogadores");
       }
     }
     getAllJogadors();

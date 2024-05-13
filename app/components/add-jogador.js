@@ -6,13 +6,11 @@ import { useRouter } from "next/navigation";
 
 const breadCrumb = [
   { title: "Home", url: "../" },
-  { title: "Add New Jogador", url: "../add/" },
+  { title: "Adicionar Jogador", url: "../add/" },
 ];
 
 const AddJogador = () => {
   const router = useRouter();
-
-  console.log("testeAAA");
 
   const {
     register,
@@ -29,15 +27,15 @@ const AddJogador = () => {
       });
 
       if (!res.ok) {
-        throw new Error("Failed to add Jogador");
+        throw new Error("Falha ao adicionar Jogador");
       }
 
       const { message } = await res.json();
       alert(message);
       router.push("../");
     } catch (error) {
-      console.log("Failed to add Jogador", error);
-      alert("Failed to add Jogador");
+      console.log("Falha ao adicionar Jogador", error);
+      alert("Falha ao adicionar Jogador");
     }
   };
 
@@ -63,14 +61,14 @@ const AddJogador = () => {
                 <label htmlFor="nacionalidade" className="form-label">
                   Nacionalidade
                 </label>
-                <textarea
+                <input
                   className="form-control"
                   {...register("nacionalidade", { required: true })}
-                ></textarea>
+                />
               </div>
               <div className="mb-3">
                 <label htmlFor="rankingatual" className="form-label">
-                  Rankingg
+                  Ranking
                 </label>
                 <input
                   className="form-control"

@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
              <meta name="description" content="Explore o mundo do tênis, um esporte emocionante e cheio de história." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com"  />
+        <link rel="icon" href="https://st2.depositphotos.com/1796131/5699/v/380/depositphotos_56991615-stock-illustration-tennis-ball.jpg" type="image/jpg" />
         <link href={inter.cssHref} rel="stylesheet" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
         <style>
